@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جعفر بن محمد</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <nav class="sidebar">
+        <div class="logo-menu">
+            <h2 class="logo" dir="rtl">ثانوية جعفر بن محمد</h2>
+            <i class='bx bx-menu toggle-btn'></i>
+        </div>
+
+        <ul class="list">
+     <li class="list-item active">
+        <a href="#">
+            <i class='bx bxs-home' ></i>
+                <span class="link-name" style="--i:1;"> الصفحة الرئيسة</span>
+        </a>
+     </li>
+     <li class="list-item d">
+        <a href="#">
+            <i class='bx bxs-school' ></i>
+                <span class="link-name" style="--i:2;"> عن المدرسة</span>
+        </a>
+     </li>
+     <li class="list-item">
+        <a href="#">
+            <i class='bx bxs-book' ></i>
+                <span class="link-name" style="--i:3;">المنهج التعليمي</span>
+        </a>
+     </li>
+     <li class="list-item">
+        <a href="#">
+            <i class='bx bxs-graduation' ></i>
+                <span class="link-name" style="--i:4;">منصة مدرستي</span>
+        </a>
+     </li>
+     <li class="list-item">
+        <a href="#">
+            <i class='bx bxs-user' ></i>
+                <span class="link-name" style="--i:5;">فريق العمل</span>
+        </a>
+     </li>
+     <li class="list-item">
+        <a href="#">
+            <i class='bx bxs-envelope' ></i>
+                <span class="link-name" style="--i:6;">تواصل معنا</span>
+        </a>
+        </li>
+        </ul>
+    </nav>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<body>
+
+    <div class="gallery" id="photoGallery">
+      <h2 dir="rtl">مرافق المدرسة</h2>
+  
+      <div class="photo-container" onclick="openLightbox('1.jpg', 'بهو المدرسة الداخلي')">
+        <img class="photo" src="1.jpg" alt="بهو المدرسة الداخلي">
+        <div class="text-container">
+          <p>بهو المدرسة الداخلي</p>
+        </div>
+      </div>
+  
+      <div class="photo-container" onclick="openLightbox('2.jpg', 'مكتب مدير المدرسة')">
+        <img class="photo" src="2.jpg" alt="مكتب مدير المدرسة">
+        <div class="text-container">
+          <p>مكتب مدير المدرسة</p>
+        </div>
+      </div>
+  
+      <div class="photo-container" onclick="openLightbox('3.jpg', 'أحد فصول المدرسة')">
+        <img class="photo" src="3.jpg" alt="أحد فصول المدرسة">
+        <div class="text-container">
+          <p>أحد فصول المدرسة</p>
+        </div>
+      </div>
+  
+      <div class="photo-container" onclick="openLightbox('4.jpg', 'مبنى المدرسة الخارجي')">
+        <img class="photo" src="4.jpg" alt="مبنى المدرسة الخارجي">
+        <div class="text-container">
+          <p>مبنى المدرسة الخارجي</p>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div class="lightbox" id="lightbox">
+      <span class="close-btn" onclick="closeLightbox()">→</span>
+      <div class="lightbox-content">
+        <img id="lightboxImage" alt="Enlarged Photo">
+        <div id="lightboxText"></div>
+      </div>
+    </div>
+  
+    <script>
+      function openLightbox(imageSrc, description) {
+        document.getElementById('lightboxImage').src = imageSrc;
+        document.getElementById('lightboxText').innerHTML = description;
+        document.getElementById('lightbox').style.display = 'flex';
+      }
+  
+      function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+      }
+    </script>
+  </body>
+
+
+
+
